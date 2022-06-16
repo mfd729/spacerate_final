@@ -1,0 +1,1125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #6665DD;
+}
+a:hover {
+  color: #473BF0;
+  text-decoration: underline;
+}
+
+/* MENU */
+.navbar {
+  background: white;
+  color: #13262F;
+  position: sticky;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.navbar-expand-lg {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1000px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+.bg-light {
+  background-color: white !important;
+  box-shadow: 0px 2px 8px rgba(71, 59, 240, 0.0705882353);
+}
+
+/* items */
+.nav-link.active {
+  margin-right: 1rem;
+  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-link.active:hover {
+  text-decoration: underline;
+  color: #473BF0;
+  text-decoration-color: #473BF0;
+}
+
+.mainLogo {
+  width: 170px;
+  height: auto;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* boton list your property */
+.navbar .btn-primary {
+  background: #9B9ECE;
+  border-style: none;
+  color: #ffffff;
+}
+.navbar .btn-primary:hover {
+  text-decoration: none;
+}
+
+/* HOME */
+.optionsMobile {
+  display: none;
+}
+
+.option1 {
+  color: #13262F;
+  margin-left: 2rem;
+  grid-row-start: 8;
+  grid-row-end: 8;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  font-weight: 500;
+  font-size: 16pt;
+  vertical-align: top;
+}
+
+.option2 {
+  color: #9B9ECE;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  grid-row-start: 9;
+  grid-row-end: 9;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.option3 {
+  color: #9B9ECE;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  grid-row-start: 10;
+  grid-row-end: 10;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+/*                      PROPIEDADES HOME                */
+.cajas {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(12, 6.5rem);
+  grid-template-rows: repeat(44, 2rem);
+  margin-left: 2rem;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transform: translateZ(0px);
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  margin: 0 -10px;
+}
+
+.cajaDePropiedad1 {
+  z-index: 5;
+  grid-row-start: 5;
+  grid-row-end: 17;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  background-color: #9B9ECE;
+  border-radius: 0.5rem;
+  color: white;
+}
+.cajaDePropiedad1:hover {
+  transform: translateZ(60px);
+  transition: 0.4s;
+  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+}
+
+.cajaDePropiedad2 {
+  z-index: 4;
+  grid-row-start: 4;
+  grid-row-end: 16;
+  grid-column-start: 6;
+  grid-column-end: 9;
+  background-color: #a3a6d9;
+  border-radius: 0.5rem;
+  color: white;
+}
+.cajaDePropiedad2:hover {
+  transform: translateZ(60px);
+  transition: 0.4s;
+  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+}
+
+.cajaDePropiedad3 {
+  z-index: 3;
+  grid-row-start: 3;
+  grid-row-end: 15;
+  grid-column-start: 7;
+  grid-column-end: 10;
+  background-color: #aeb1ea;
+  border-radius: 0.5rem;
+  color: white;
+}
+.cajaDePropiedad3:hover {
+  transform: translateZ(60px);
+  transition: 0.4s;
+  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+}
+
+.cajaDePropiedad4 {
+  z-index: 2;
+  grid-row-start: 2;
+  grid-row-end: 14;
+  grid-column-start: 8;
+  grid-column-end: 11;
+  background-color: #b5b8ea;
+  border-radius: 0.5rem;
+  color: white;
+}
+.cajaDePropiedad4:hover {
+  transform: translateZ(60px);
+  transition: 0.4s;
+  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+}
+
+.cajaDePropiedad5 {
+  z-index: 1;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  grid-column-start: 9;
+  grid-column-end: 12;
+  background-color: #bdbfea;
+  border-radius: 0.5rem;
+  color: white;
+}
+.cajaDePropiedad5:hover {
+  transform: translateZ(60px);
+  transition: 0.4s;
+  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+}
+
+.imgPropiedad {
+  width: 312px;
+  height: auto;
+}
+
+.nombrePropiedad {
+  text-decoration: underline;
+  font-size: 16pt;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.precioPropiedad {
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.detallesPropiedad {
+  font-weight: 300;
+  margin-left: 1rem;
+}
+
+.ratingPropiedad {
+  font-size: 12pt;
+  margin-left: 1rem;
+  display: inline;
+}
+
+.ratingStars {
+  width: 1rem;
+  height: auto;
+  display: inline;
+}
+
+.ctaPropiedades1 {
+  font-weight: 300;
+  grid-column-start: 11;
+  grid-column-end: 13;
+  grid-row-start: 17;
+  padding: 0.5rem;
+}
+.ctaPropiedades1:hover {
+  color: #473BF0;
+  text-decoration: underline;
+}
+
+.ctaPropiedades2 {
+  font-weight: 300;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 42;
+  padding: 0.5rem;
+}
+.ctaPropiedades2:hover {
+  color: #473BF0;
+  text-decoration: underline;
+}
+
+/*            banner HOME             */
+.module-border-wrap {
+  padding: 1rem;
+  background: linear-gradient(331deg, rgb(102, 101, 221) 0%, rgb(71, 59, 240) 100%);
+  padding: 2px;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 20;
+  grid-row-end: 22;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  margin-left: 2rem;
+  margin-right: -8rem;
+}
+
+.module {
+  background: white;
+  font-size: 12pt;
+  color: #473BF0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.postPropertyCTA {
+  font-weight: 300;
+  border-color: linear-gradient(331deg, rgb(102, 101, 221) 0%, rgb(71, 59, 240) 100%);
+  color: linear-gradient(331deg, rgb(102, 101, 221) 0%, rgb(71, 59, 240) 100%);
+  border-width: 1px;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row-start: 20;
+  grid-row-end: 24;
+}
+
+/* Cajas abajo HOME */
+.option4 {
+  color: #9B9ECE;
+  margin-left: 2rem;
+  grid-row-start: 34;
+  grid-row-end: 34;
+  grid-column-start: 10;
+  grid-column-end: 12;
+}
+
+.option5 {
+  color: #13262F;
+  margin-left: 2rem;
+  grid-row-start: 35;
+  grid-row-end: 35;
+  grid-column-start: 10;
+  grid-column-end: 12;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.option6 {
+  color: #9B9ECE;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  grid-row-start: 36;
+  grid-row-end: 36;
+  grid-column-start: 10;
+  grid-column-end: 12;
+}
+
+.cajaDePropiedad6 {
+  z-index: 5;
+  grid-row-start: 29;
+  grid-row-end: 41;
+  grid-column-start: 6;
+  grid-column-end: 9;
+  background-color: #9B9ECE;
+  border-radius: 0.5rem;
+  color: white;
+}
+.cajaDePropiedad6:hover {
+  transform: translateZ(60px);
+  transition: 0.4s;
+  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+}
+
+.cajaDePropiedad7 {
+  z-index: 4;
+  grid-row-start: 28;
+  grid-row-end: 40;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  background-color: #a3a6d9;
+  border-radius: 0.5rem;
+  color: white;
+}
+.cajaDePropiedad7:hover {
+  transform: translateZ(60px);
+  transition: 0.4s;
+  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+}
+
+.cajaDePropiedad8 {
+  z-index: 3;
+  grid-row-start: 27;
+  grid-row-end: 39;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  background-color: #aeb1ea;
+  border-radius: 0.5rem;
+  color: white;
+}
+.cajaDePropiedad8:hover {
+  transform: translateZ(60px);
+  transition: 0.4s;
+  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+}
+
+.cajaDePropiedad9 {
+  z-index: 2;
+  grid-row-start: 26;
+  grid-row-end: 38;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  background-color: #b5b8ea;
+  border-radius: 0.5rem;
+  color: white;
+}
+.cajaDePropiedad9:hover {
+  transform: translateZ(60px);
+  transition: 0.4s;
+  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+}
+
+.cajaDePropiedad10 {
+  z-index: 1;
+  grid-row-start: 25;
+  grid-row-end: 37;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  background-color: #bdbfea;
+  border-radius: 0.5rem;
+  color: white;
+}
+.cajaDePropiedad10:hover {
+  transform: translateZ(60px);
+  transition: 0.4s;
+  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+}
+
+/* --------------        MOBILE     HOME          -------------- */
+@media only screen and (max-width: 375px) {
+  /* SCROLL IZQUIERDO HOME */
+  .option1, .option2, .option3, .option4, .option5, .option6 {
+    display: none;
+  }
+
+  .optionsMobile {
+    margin-left: -2rem;
+  }
+  .optionsMobile .mobOptions1 {
+    font-size: 9pt;
+    margin-right: -60px;
+    margin-left: 3rem;
+  }
+  .optionsMobile .mobOptions1 a {
+    color: #13262F;
+  }
+  .optionsMobile .mobOptions2, .optionsMobile .mobOptions3 {
+    font-size: 9pt;
+    margin-right: -50px;
+    margin-top: 0.5px;
+  }
+  .optionsMobile .mobOptions2 a, .optionsMobile .mobOptions3 a {
+    color: #9B9ECE;
+  }
+
+  .option1 {
+    margin-left: 0.5rem;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-weight: 500;
+    font-size: 10pt;
+  }
+
+  .option2 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    font-weight: 500;
+    font-size: 10pt;
+  }
+
+  .option3 {
+    margin-left: 2rem;
+    grid-row-start: 10;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: none;
+  }
+
+  .cajas {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(10, 2rem);
+    grid-template-rows: repeat(53, 1rem);
+    margin-left: 1rem;
+  }
+
+  .cajaDePropiedad1 {
+    z-index: 5;
+    grid-row-start: 7;
+    grid-row-end: 21;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    background-color: #9B9ECE;
+    border-radius: 0.5rem;
+    color: white;
+    box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  }
+
+  .cajaDePropiedad2 {
+    z-index: 4;
+    grid-row-start: 6;
+    grid-row-end: 20;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    background-color: #a3a6d9;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .cajaDePropiedad3 {
+    z-index: 3;
+    grid-row-start: 5;
+    grid-row-end: 19;
+    grid-column-start: 4;
+    grid-column-end: 9;
+    background-color: #aeb1ea;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .cajaDePropiedad4 {
+    z-index: 2;
+    grid-row-start: 4;
+    grid-row-end: 18;
+    grid-column-start: 5;
+    grid-column-end: 10;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .cajaDePropiedad5 {
+    z-index: 1;
+    grid-row-start: 3;
+    grid-row-end: 17;
+    grid-column-start: 6;
+    grid-column-end: 11;
+    background-color: #bdbfea;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .imgPropiedad {
+    width: 160px;
+    height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .nombrePropiedad {
+    text-decoration: underline;
+    font-size: 9pt;
+    margin-top: 0.25rem;
+    margin-left: 0.5rem;
+    line-height: 1rem;
+  }
+
+  .precioPropiedad {
+    font-weight: 300;
+    font-size: 9pt;
+    margin-left: 0.5rem;
+    line-height: 1rem;
+  }
+
+  .detallesPropiedad {
+    font-weight: 200;
+    font-size: 9pt;
+    margin-left: 0.5rem;
+    line-height: 1.5rem;
+  }
+
+  .ratingPropiedad {
+    font-size: 9pt;
+    margin-left: 0.5rem;
+    display: inline;
+    line-height: 1rem;
+  }
+
+  .ratingStars {
+    width: 1rem;
+    height: auto;
+    display: inline;
+    line-height: 1rem;
+  }
+
+  .ctaPropiedades1 {
+    font-weight: 300;
+    font-size: 9pt;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 21;
+    color: #473BF0;
+    text-decoration: underline;
+  }
+
+  /*            banner HOME             */
+  .module-border-wrap {
+    padding: 1rem;
+    background: linear-gradient(331deg, rgb(102, 101, 221) 0%, rgb(71, 59, 240) 100%);
+    padding: 2px;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 26;
+    grid-row-end: 31;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    margin-right: -8rem;
+    text-align: center;
+  }
+
+  .module {
+    background: white;
+    font-size: 9pt;
+    color: #473BF0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  /* Cajas abajo HOME */
+  .option4 {
+    display: none;
+  }
+
+  .option5 {
+    display: none;
+  }
+
+  .option6 {
+    display: none;
+  }
+
+  .cajaDePropiedad6 {
+    z-index: 5;
+    grid-row-start: 38;
+    grid-row-end: 52;
+    grid-column-start: 5;
+    grid-column-end: 10;
+    background-color: #9B9ECE;
+    border-radius: 0.5rem;
+    color: white;
+    box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  }
+
+  .cajaDePropiedad7 {
+    z-index: 4;
+    grid-row-start: 37;
+    grid-row-end: 51;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    background-color: #a3a6d9;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .cajaDePropiedad8 {
+    z-index: 3;
+    grid-row-start: 36;
+    grid-row-end: 50;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    background-color: #aeb1ea;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .cajaDePropiedad9 {
+    z-index: 2;
+    grid-row-start: 35;
+    grid-row-end: 49;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .cajaDePropiedad10 {
+    z-index: 1;
+    grid-row-start: 34;
+    grid-row-end: 48;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: #bdbfea;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .ctaPropiedades2 {
+    font-weight: 300;
+    font-size: 9pt;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 53;
+    color: #473BF0;
+    text-decoration: underline;
+  }
+}
+/* FOOTER */
+.footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  background-color: #c8cae5;
+  color: #13262F;
+  display: grid;
+  grid-template-columns: repeat(12, 4rem);
+  grid-template-rows: repeat(3, 4rem);
+  grid-column-gap: 1rem;
+  grid-row-gap: 0.5rem;
+}
+
+.copyright {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-left: 2rem;
+}
+
+.socialLogo1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  width: 3rem;
+  height: 3rem;
+  text-decoration: none;
+  margin-left: 2rem;
+  color: black;
+}
+
+.socialLogo2 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  width: 3rem;
+  height: 3rem;
+  text-decoration: none;
+  color: black;
+}
+
+.socialLink1 {
+  font-size: 10pt;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #13262F;
+}
+.socialLink1:hover {
+  color: #6665DD;
+}
+
+.socialLink2 {
+  font-size: 10pt;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  text-decoration: none;
+  color: #13262F;
+}
+.socialLink2:hover {
+  color: #6665DD;
+}
+
+/* //////////////////////// footer mobile ////////////////////// */
+@media only screen and (max-width: 375px) {
+  .footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    background-color: #c8cae5;
+    color: #13262F;
+    display: grid;
+    grid-template-columns: repeat(5, 4rem);
+    grid-template-rows: repeat(4, 2rem);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
+
+  .copyright {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 1rem;
+  }
+
+  .socialLogo1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 2rem;
+    height: 2rem;
+    text-decoration: none;
+    margin-left: 1rem;
+    color: black;
+  }
+
+  .socialLogo2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 2rem;
+    height: 2rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  .socialLink1 {
+    font-size: 10pt;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #13262F;
+  }
+
+  .socialLink2 {
+    font-size: 10pt;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    text-decoration: none;
+    color: #13262F;
+  }
+}
+/* -------------------------------PAGINA PROPIEDADES ------------------------------------ */
+.cardsContainer {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.cardPropiedad {
+  margin-left: 0.25rem !important;
+  margin-right: 0.25rem !important;
+}
+
+.tarjetaSingular {
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
+}
+
+.abajoCard {
+  background-color: #b5b8ea;
+  border-radius: 0 0 0.5rem 0.5rem;
+  color: white !important;
+}
+
+.foto, .imgPropiedad {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.namePropiedad {
+  text-decoration: underline;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.pricePropiedad {
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.detailsPropiedad {
+  font-weight: 300;
+}
+
+.rating {
+  font-size: 12pt;
+  display: inline;
+  margin-bottom: 0.5rem;
+}
+
+.ratingStars {
+  width: 1rem;
+  height: auto;
+  display: inline;
+  margin-bottom: 0.5rem;
+}
+
+.filtroGrande {
+  font-weight: 300;
+  font-size: 16pt;
+  color: #473BF0;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+/* filtros secundarios */
+.filtros {
+  font-weight: 800;
+  color: #13262F;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.iconoDetalles {
+  width: 1.5rem;
+}
+
+.textoFiltros {
+  font-weight: 400;
+  color: #13262F;
+  margin-right: 0.5rem;
+}
+
+.inputFiltro {
+  font-weight: 300;
+  text-align: center;
+  margin-left: 0rem;
+  margin-right: 3rem;
+  width: 2rem;
+}
+
+.botonCargarMas {
+  grid-row-start: 29;
+  grid-row-end: 30;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  font-weight: 400;
+  font-size: 12pt;
+  padding: 0.5rem 3rem;
+  background: linear-gradient(331deg, rgb(102, 101, 221) 0%, rgb(71, 59, 240) 100%);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  border-radius: 5rem;
+}
+.botonCargarMas:hover {
+  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  background: linear-gradient(-331deg, rgb(102, 101, 221) 0%, rgb(71, 59, 240) 100%);
+}
+
+/* ---------PAGINA PROPIEDADES MOBILE------------ */
+@media only screen and (max-width: 375px) {
+  .filtros {
+    font-weight: 800;
+    color: #13262F;
+    display: block;
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+
+  .iconoDetalles {
+    width: 1.5rem;
+  }
+
+  .textoFiltros {
+    font-weight: 400;
+    color: #13262F;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .inputFiltro {
+    font-weight: 300;
+    text-align: center;
+    margin-left: 0rem;
+    margin-right: 100px;
+    width: 2rem;
+  }
+
+  .botonCargarMas {
+    grid-row-start: 29;
+    grid-row-end: 30;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    font-weight: 400;
+    font-size: 10pt;
+    padding: 0.5rem 3rem;
+    background: linear-gradient(331deg, rgb(102, 101, 221) 0%, rgb(71, 59, 240) 100%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    border-radius: 5rem;
+  }
+}
+/* -------------------------------PAGINA CONTACTO ------------------------------------ */
+.textoIntro {
+  font-weight: 300;
+  font-size: 16pt;
+  color: #473BF0;
+  margin-left: 2rem;
+}
+
+.introForm {
+  font-weight: 300;
+  color: #13262F;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  font-size: 12pt;
+  font-weight: 300;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.form-control {
+  border-color: #6665DD;
+}
+.form-control:hover {
+  color: #473BF0;
+}
+
+.botonSubmit {
+  margin-left: 2rem;
+  padding: 0.5rem 3rem;
+  border-radius: 5rem;
+}
+
+/* -------------------------------PAGINA FAQ ------------------------------------ */
+/* Search */
+.searchbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.form-control2 {
+  border-color: #9B9ECE;
+  padding-left: 1rem;
+  padding-right: 14rem;
+  height: 36px;
+  border-radius: 0.25rem 0rem 0rem 0.25rem;
+  border-width: 1px;
+}
+
+@media only screen and (max-width: 375px) {
+  .searchbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .form-control2 {
+    border-color: #9B9ECE;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    height: 36px;
+    border-radius: 0.25rem 0rem 0rem 0.25rem;
+    border-width: 1px;
+  }
+}
+.btn-outline-secondary {
+  color: #ffffff;
+  background-color: #6665DD;
+  border-style: none;
+}
+.btn-outline-secondary:hover {
+  color: #ffffff;
+  background-color: #473BF0;
+}
+
+.btn-outline-success {
+  color: #ffffff;
+  background-color: #6665DD;
+  border-style: none;
+}
+.btn-outline-success:hover {
+  color: #ffffff;
+  background-color: #473BF0;
+}
+
+/* accordion */
+.card {
+  background-color: rgba(189, 191, 234, 0.137254902);
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-style: none;
+}
+
+.card-header {
+  color: #473BF0;
+  background-color: rgba(189, 191, 234, 0.7411764706);
+}
+
+.btn-link {
+  color: #473BF0;
+  text-decoration: none;
+}
+
+.card-body {
+  font-weight: 300;
+  color: #13262F;
+}
+
+.btn-link {
+  color: #473BF0;
+}
+
+/*# sourceMappingURL=estilos.css.map */

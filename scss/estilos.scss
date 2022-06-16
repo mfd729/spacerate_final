@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap');
+
+$myFont: 'Poppins', sans-serif;
+$brightPurple: #473BF0;
+$brightPurpleOpacity: #473BF052;
+$lila: #6665DD;
+$lavanda: #9B9ECE;
+$black: #13262F;
+$grey: #ACADBC;
+$lightGrey: #c8cae5;
+$white: white;
+$lightLavanda: #b5b8ea;
+$gradientRegular: linear-gradient(331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
+$gradientInverted: linear-gradient(-331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
+
+
+$typeSizes: (
+    xs: 8pt,
+    sm: 9pt,
+    md: 10pt,
+    lg: 12pt,
+    xl: 16pt
+);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $myFont;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    color: $lila;
+        &:hover{
+            color: $brightPurple;
+            text-decoration: underline;    
+        }
+}
+
+/* MENU */
+@import "navbar.scss";
+
+/* HOME */
+@import "home.scss";
+
+/* FOOTER */
+@import "footer.scss";
+
+/* -------------------------------PAGINA PROPIEDADES ------------------------------------ */
+.cardsContainer{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.cardPropiedad{
+    margin-left: 0.25rem !important;
+    margin-right: 0.25rem !important;
+}
+
+.tarjetaSingular{
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+}
+
+.abajoCard{
+    background-color: $lightLavanda;
+    border-radius: 0 0 0.5rem 0.5rem;
+    color: $white !important; 
+}
+
+.foto{
+    border-radius: 0.5rem 0.5rem 0 0;  
+}
+
+.namePropiedad{
+    text-decoration: underline;
+    color: $white;
+    margin-bottom: 0.5rem;
+}
+
+.pricePropiedad{
+    font-weight: 400;  
+    line-height: 1rem;  
+}
+
+.detailsPropiedad{
+    font-weight: 300;
+}
+
+.rating{
+    font-size: map-get($typeSizes, lg); 
+    display: inline;
+    margin-bottom: 0.5rem;
+}
+
+.ratingStars{
+    width: 1rem;
+    height: auto;
+    display: inline;
+    margin-bottom: 0.5rem;
+}
+
+.filtroGrande{
+    font-weight: 300; 
+    font-size: map-get($typeSizes, xl); 
+    color:$brightPurple;
+    margin-left: 2rem;
+    margin-top: 1rem;  
+}
+
+/* filtros secundarios */
+.filtros{
+    font-weight:800;
+    color: $black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+
+.iconoDetalles{
+    width: 1.5rem;
+}
+
+.textoFiltros{
+    font-weight: 400;
+    color: $black;
+    margin-right: 0.5rem;
+}
+
+.inputFiltro{
+    font-weight: 300;
+    text-align: center;
+    margin-left: 0rem;
+    margin-right: 3rem;
+    width: 2rem;
+} 
+
+.botonCargarMas{
+    grid-row-start: 29;
+    grid-row-end: 30;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    font-weight: 400;
+    font-size: map-get($typeSizes, lg); 
+    padding: 0.5rem 3rem;
+    background: $gradientRegular;
+    color: $white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    border-radius: 5rem;
+        &:hover{
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+            background: $gradientInverted;
+        }
+}
+
+/* ---------PAGINA PROPIEDADES MOBILE------------ */
+@media only screen and (max-width: 375px){
+.filtros{
+    font-weight:800;
+    color: $black;
+    display: block;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+.iconoDetalles{
+    width: 1.5rem;
+}
+
+.textoFiltros{
+    font-weight: 400;
+    color: $black;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.inputFiltro{
+    font-weight: 300;
+    text-align: center;
+    margin-left: 0rem;
+    margin-right: 100px;
+    width: 2rem;
+} 
+
+.botonCargarMas{
+    grid-row-start: 29;
+    grid-row-end: 30;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    font-weight: 400;
+    font-size: map-get($typeSizes, md); 
+    padding: 0.5rem 3rem;
+    background: $gradientRegular;
+    color: $white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    border-radius: 5rem;
+}
+
+}
+
+
+/* -------------------------------PAGINA CONTACTO ------------------------------------ */
+.textoIntro{
+    font-weight: 300; 
+    font-size: map-get($typeSizes, xl); 
+    color: $brightPurple; 
+    margin-left: 2rem;
+}
+
+
+.introForm{
+    font-weight: 300; 
+    color:$black;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.form-group{
+    font-size: map-get($typeSizes, lg); 
+    font-weight: 300;
+    margin-left: 2rem; 
+    margin-right: 2rem;   
+}
+
+.form-control{
+    border-color: $lila;
+        &:hover{
+            color: $brightPurple;
+        }
+}
+
+.botonSubmit{
+    margin-left: 2rem;
+    padding: 0.5rem 3rem;
+    border-radius: 5rem;
+}
+
+
+/* -------------------------------PAGINA FAQ ------------------------------------ */
+/* Search */ 
+.searchbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+
+.form-control2{
+    border-color: $lavanda;
+    padding-left: 1rem;
+    padding-right: 14rem;
+    height: 36px;
+    border-radius: 0.25rem 0rem 0rem 0.25rem;
+    border-width: 1px;
+}
+
+@media only screen and (max-width: 375px){
+    .searchbar{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }    
+
+    .form-control2{
+        border-color: $lavanda;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        height: 36px;
+        border-radius: 0.25rem 0rem 0rem 0.25rem;
+        border-width: 1px;
+    }
+}
+
+
+.btn-outline-secondary{
+    color: #ffffff;
+    background-color: $lila;
+    border-style: none;
+        &:hover{
+            color: #ffffff;
+            background-color:$brightPurple;
+        }
+}
+
+.btn-outline-success{
+    color: #ffffff;
+    background-color: $lila;
+    border-style: none;
+        &:hover{
+            color: #ffffff;
+            background-color:$brightPurple;
+        }
+}
+
+
+/* accordion */
+
+.card{
+    background-color: #bdbfea23;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-style: none;
+}
+
+.card-header{
+    color: $brightPurple;
+    background-color: #bdbfeabd;
+}
+
+.btn-link{
+    color: $brightPurple;
+    text-decoration: none;
+}
+
+.card-body{
+    font-weight: 300;
+    color: $black;    
+}
+
+.btn-link{
+    color:$brightPurple;
+}
+
+
+

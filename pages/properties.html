@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="See all the properties available to rent and/or buy, with ratings from ex-tenants">
+    <meta name="keywords" content="house for rent, apartment for rent, space for rent, office for rent, rent, house for sale, apartment for sale, space for sale, office for sale">
+    <title>Properties available to rent (with rates!) - spacerate®</title>
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon_io/site.webmanifest">    
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/estilos.css">
+
+</head>
+
+
+
+<body>
+
+    <!-- NAVBAR DE BOOTSTRAP-->    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="/index.html"> <img class="mainLogo" src="/assets/logo.png"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link active" href="/index.html">Home </a>
+            <a class="nav-link active" href="/pages/properties.html">Properties</a>
+            <a class="nav-link active" href="/pages/contact.html">Contact</a>
+            <a class="nav-link active" href="/pages/faq.html">FAQ</a>
+            </div>
+        </div>
+    </nav>     
+
+
+<!--topSection-->
+    <main>
+        <h1 class="filtroGrande">I am looking for a _____ located in _____ </h1>
+
+        <div class="filtros">
+
+            <form action="php" method="get" enctype="text/plain">
+            
+                <!--cuartos-->
+                <img class="iconoDetalles" src="https://cdn-icons-png.flaticon.com/128/3159/3159436.png" alt="bed icon">
+                <label class="textoFiltros" for="">minimum rooms:</label>
+                <input class="inputFiltro" type="text" name="rooms" id="" required placeholder="0">    
+
+                <!--bano-->
+                <img class="iconoDetalles" src="https://cdn-icons.flaticon.com/png/128/726/premium/726768.png?token=exp=1651373307~hmac=bef980c1b75ebd5b079b639b9273c3dd" alt="bath icon">
+                <label class="textoFiltros" for="">minimum bathrooms:</label>
+                <input class="inputFiltro" type="text" name="bathrooms" id="" required placeholder="0"> 
+                
+                <!--garage-->
+                <img class="iconoDetalles" src="https://cdn-icons-png.flaticon.com/128/7201/7201834.png" alt="car icon">
+                <label class="textoFiltros" for="">has a garage</label>
+                <input class="inputFiltro" type="checkbox" name="garage" id="" required placeholder="1"> 
+                
+                <!--pets-->
+                <img class="iconoDetalles" src="https://cdn-icons-png.flaticon.com/128/1076/1076877.png" alt="paw icon">
+                <label class="textoFiltros" for="">accepts pets</label>
+                <input class="inputFiltro" type="checkbox" name="pets" id="" required placeholder="1">             
+
+
+        </div> 
+
+
+    <!-- CARDS DE BOOTSTRAP--> 
+        <div class="row row-cols-1 row-cols-md-3 cardsContainer">
+            <div class="col mb-1 tarjetaSingular">
+                <div class="card h-100 cardPropiedad">
+                <img src="/assets/fotos-casas/propiedades1.jpg" class="card-img-top foto" alt="Swimming pool connected to the interior">
+                <div class="card-body abajoCard">
+                    <h5 class="card-title namePropiedad">Exclusive zone in the city</h5>
+                    <p class="card-text rating">Rating:  4</p>   
+                    <img class="ratingStars" src="/assets/1star.svg" alt="">     
+                    <p class="card-text pricePropiedad">$1300</p>
+                    <p class="card-text detailsPropiedad">4 bed - 3 bath</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col mb-1 tarjetaSingular">
+                <div class="card h-100 cardPropiedad">
+                <img src="/assets/fotos-casas/propiedades2.jpg" class="card-img-top foto" alt="2 chairs pictured on the terrace and nature">
+                <div class="card-body abajoCard">
+                    <h5 class="card-title namePropiedad">Interior gardens! 😲</h5>
+                    <p class="card-text rating">Rating:  4</p>   
+                    <img class="ratingStars" src="/assets/1star.svg" alt="">     
+                    <p class="card-text pricePropiedad">$1300</p>
+                    <p class="card-text detailsPropiedad">4 bed - 3 bath</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col mb-1 tarjetaSingular">
+                <div class="card h-100 cardPropiedad">
+                <img src="/assets/fotos-casas/propiedades3.jpg" class="card-img-top foto" alt="Wooden dining table with a kitchen on the background">
+                <div class="card-body abajoCard">
+                    <h5 class="card-title namePropiedad">Artisan furniture</h5>
+                    <p class="card-text rating">Rating:  4</p>   
+                    <img class="ratingStars" src="/assets/1star.svg" alt="star icon">     
+                    <p class="card-text pricePropiedad">$1300</p>
+                    <p class="card-text detailsPropiedad">4 bed - 3 bath</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col mb-1 tarjetaSingular">
+                <div class="card h-100 cardPropiedad">
+                <img src="/assets/fotos-casas/propiedades4.jpg" class="card-img-top foto" alt="Dining room with sofa, coffee table and two side chairs">
+                <div class="card-body abajoCard">
+                    <h5 class="card-title namePropiedad">Common spaces for big families</h5>
+                    <p class="card-text rating">Rating:  4</p>   
+                    <img class="ratingStars" src="/assets/1star.svg" alt="star icon">     
+                    <p class="card-text pricePropiedad">$1300</p>
+                    <p class="card-text detailsPropiedad">4 bed - 3 bath</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col mb-1 tarjetaSingular">
+                <div class="card h-100 cardPropiedad">
+                <img src="/assets/fotos-casas/propiedades5.jpg" class="card-img-top foto" alt="Exterior of a blue painted house in the middle of nature">
+                <div class="card-body abajoCard">
+                    <h5 class="card-title namePropiedad">Located among nature - Polanco</h5>
+                    <p class="card-text rating">Rating:  4</p>   
+                    <img class="ratingStars" src="/assets/1star.svg" alt="star icon">     
+                    <p class="card-text pricePropiedad">$1300</p>
+                    <p class="card-text detailsPropiedad">4 bed - 3 bath</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col mb-1 tarjetaSingular">
+                <div class="card h-100 cardPropiedad">
+                <img src="/assets/fotos-casas/propiedades6.jpg" class="card-img-top foto" alt="Living room with a chimney, tv and 2 chairs">
+                <div class="card-body abajoCard">
+                    <h5 class="card-title namePropiedad">Remodeled apartment for 2</h5>
+                    <p class="card-text rating">Rating:  4</p>   
+                    <img class="ratingStars" src="/assets/1star.svg" alt="star icon">     
+                    <p class="card-text pricePropiedad">$1300</p>
+                    <p class="card-text detailsPropiedad">4 bed - 3 bath</p>
+                </div>
+                </div>
+            </div>
+        </div>   
+
+            <button type="button" class="btn btn-primary botonCargarMas">See more properties</button>
+    </main>
+
+<!--footer-->
+<footer class="footer">
+
+    <p class="copyright">spacerate®. All rights reserved, 2022.</p> <br>
+
+    <img class="socialLogo1" src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="logo de instagram">
+    <img class="socialLogo2" src="https://cdn-icons-png.flaticon.com/512/747/747543.png" alt="logo de facebook">
+    <a class="socialLink1" href="https://www.instagram.com/archdigest/?hl=es">Instagram</a>
+    <a class="socialLink2" href="https://www.facebook.com/architecturaldigest/">Facebook</a>
+        
+
+</footer> 
+
+
+<!--Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+.navbar{
+    background: $white;
+    color:$black;
+    position:sticky;
+    margin-bottom: 1rem;
+    display: flex;    
+}
+
+.navbar-expand-lg {
+    display: flex;   
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+@media only screen and (min-width: 1000px){
+    .navbar-nav{
+        display: flex;   
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: auto;
+    }  
+}
+
+
+
+.bg-light{
+    background-color: $white !important;
+    box-shadow: 0px 2px 8px #473bf012;
+}
+
+/* items */
+.nav-link.active{
+    margin-right: 1rem;
+    display: block;
+    display: flex;   
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+        &:hover{
+            text-decoration: underline;
+            color: $brightPurple;
+            text-decoration-color: $brightPurple;
+        }
+}
+
+.mainLogo{
+    width: 170px;
+    height: auto;
+    margin-left: 2rem;
+    display: flex;   
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* boton list your property */
+.navbar .btn-primary {
+    background: $lavanda;
+    border-style: none;
+    color:#ffffff; 
+        &:hover{
+            text-decoration: none;    
+        }
+}

@@ -1,0 +1,607 @@
+.optionsMobile{
+display: none;
+} 
+
+.option1 {
+    color: $black;
+    margin-left: 2rem;
+    grid-row-start: 8;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-weight: 500;
+    font-size: map-get($typeSizes, xl); 
+    vertical-align: top;
+}
+
+
+.option2 {
+    color: $lavanda;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    grid-row-start: 9;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.option3 {
+    color: $lavanda;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    grid-row-start: 10;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+
+/*                      PROPIEDADES HOME                */
+@mixin estiloCajas {
+    border-radius: 0.5rem;
+    color: white;    
+}
+
+@mixin hoverCajas {
+    transform: translateZ(60px);
+    transition: 0.4s;
+    box-shadow: 3px 2px 10px $brightPurpleOpacity; 
+}
+
+.cajas{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 6.5rem);
+    grid-template-rows: repeat(44, 2rem);
+    margin-left: 2rem;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: translateZ(0px);
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    margin: 0 -10px
+}
+
+
+.cajaDePropiedad1{
+    z-index: 5;
+    grid-row-start: 5;
+    grid-row-end: 17;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    background-color: $lavanda;
+    @include estiloCajas;
+        &:hover{
+            @include hoverCajas  
+        }
+}
+
+.cajaDePropiedad2{
+    z-index: 4;
+    grid-row-start: 4;
+    grid-row-end: 16;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    background-color: #a3a6d9;
+    @include estiloCajas;
+        &:hover{
+            @include hoverCajas  
+        }
+}
+
+.cajaDePropiedad3{
+    z-index: 3;
+    grid-row-start: 3;
+    grid-row-end: 15;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    background-color: #aeb1ea;
+    @include estiloCajas;
+        &:hover{
+            @include hoverCajas  
+        }
+}
+
+.cajaDePropiedad4{
+    z-index: 2;
+    grid-row-start: 2;
+    grid-row-end: 14;
+    grid-column-start:8;
+    grid-column-end: 11;
+    background-color: $lightLavanda;
+    @include estiloCajas;
+        &:hover{
+            @include hoverCajas  
+        }
+}
+
+.cajaDePropiedad5{
+    z-index: 1;
+    grid-row-start: 1;
+    grid-row-end: 13;
+    grid-column-start: 9;
+    grid-column-end: 12;
+    background-color: #bdbfea;
+    @include estiloCajas;
+        &:hover{
+            @include hoverCajas  
+        }
+}
+
+.imgPropiedad{
+    width: 312px;
+    height: auto;
+    @extend .foto
+}
+
+.nombrePropiedad{
+    text-decoration: underline;
+    font-size: map-get($typeSizes, xl); 
+    margin-top: 0.5rem;  
+    margin-left: 1rem;
+}
+
+.precioPropiedad{
+    font-weight: 400;   
+    margin-left: 1rem;
+}
+
+.detallesPropiedad{
+    font-weight: 300;
+    margin-left: 1rem;
+}
+
+.ratingPropiedad{
+    font-size: map-get($typeSizes, lg); 
+    margin-left: 1rem; 
+    display: inline;
+}
+
+.ratingStars{
+    width: 1rem;
+    height: auto;
+    display: inline;
+}
+
+.ctaPropiedades1{
+    font-weight: 300; 
+    grid-column-start: 11;
+    grid-column-end: 13;
+    grid-row-start: 17;
+    padding: 0.5rem;
+        &:hover{
+            color: $brightPurple;
+            text-decoration: underline;
+        }
+}
+
+.ctaPropiedades2{
+    font-weight: 300; 
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 42;
+    padding: 0.5rem;
+        &:hover{
+            color: $brightPurple;
+            text-decoration: underline;
+        }
+}
+
+
+/*            banner HOME             */
+
+.module-border-wrap {
+    padding: 1rem;
+    background: $gradientRegular;
+    padding: 2px;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 20;
+    grid-row-end: 22; 
+    border-width: 1px;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    margin-right: -8rem;
+}
+
+.module {
+    background: $white;
+    font-size: map-get($typeSizes, lg);
+    color: $brightPurple;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.postPropertyCTA{
+    font-weight: 300;
+    border-color: $gradientRegular;
+    color: $gradientRegular;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 20;
+    grid-row-end: 24;      
+}
+
+
+/* Cajas abajo HOME */
+.option4 {
+    color: $lavanda;
+    margin-left: 2rem;
+    grid-row-start: 34;
+    grid-row-end: 34;
+    grid-column-start: 10;
+    grid-column-end: 12;
+}
+
+
+.option5 {
+    color: $black;
+    margin-left: 2rem;
+    grid-row-start: 35;
+    grid-row-end: 35;
+    grid-column-start: 10;
+    grid-column-end: 12;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.option6 {
+    color: $lavanda;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    grid-row-start: 36;
+    grid-row-end: 36;
+    grid-column-start: 10;
+    grid-column-end: 12;
+}
+
+.cajaDePropiedad6{
+    z-index: 5;
+    grid-row-start: 29;
+    grid-row-end: 41;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    background-color: #9B9ECE;
+    @include estiloCajas;
+        &:hover{
+            @include hoverCajas  
+        }
+}
+
+.cajaDePropiedad7{
+    z-index: 4;
+    grid-row-start: 28;
+    grid-row-end: 40;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    background-color: #a3a6d9;
+    @include estiloCajas;
+        &:hover{
+            @include hoverCajas  
+        }
+}
+
+.cajaDePropiedad8{
+    z-index: 3;
+    grid-row-start: 27;
+    grid-row-end: 39;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    background-color: #aeb1ea;
+    @include estiloCajas;
+        &:hover{
+            @include hoverCajas  
+        }
+}
+
+.cajaDePropiedad9{
+    z-index: 2;
+    grid-row-start: 26;
+    grid-row-end: 38;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    background-color: $lightLavanda;
+    @include estiloCajas;
+        &:hover{
+            @include hoverCajas  
+        }
+}
+
+.cajaDePropiedad10{
+    z-index: 1;
+    grid-row-start: 25;
+    grid-row-end: 37;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: #bdbfea;
+    @include estiloCajas;
+        &:hover{
+            @include hoverCajas  
+        }
+}  
+
+
+/* --------------        MOBILE     HOME          -------------- */
+@media only screen and (max-width: 375px){
+
+    /* SCROLL IZQUIERDO HOME */
+    .option1, .option2, .option3, .option4, .option5, .option6{
+        display: none;
+    }
+
+    .optionsMobile{
+        margin-left: -2rem;
+        .mobOptions1 {
+            font-size: map-get($typeSizes,sm); 
+            margin-right: -60px; 
+            margin-left: 3rem;
+                a{
+                    color: $black
+                }
+            }
+        
+        .mobOptions2, .mobOptions3 {
+            font-size: map-get($typeSizes, sm);  
+            margin-right: -50px;  
+            margin-top: 0.5px;
+                a{
+                    color: $lavanda
+                } 
+            }
+    }
+
+
+
+    .option1 {
+        margin-left: 0.5rem;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        font-weight: 500;
+        font-size: map-get($typeSizes, md); 
+    }
+
+
+    .option2 {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 6;
+        grid-column-end: 10;
+        font-weight: 500;
+        font-size: map-get($typeSizes, md); 
+    }
+
+    .option3 {
+        margin-left: 2rem;
+        grid-row-start: 10;
+        grid-row-end: 10;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        display: none;
+    }
+
+
+    .cajas{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(10, 2rem);
+        grid-template-rows: repeat(53, 1rem);
+        margin-left: 1rem;
+    }
+
+
+    .cajaDePropiedad1{
+        z-index: 5;
+        grid-row-start: 7;
+        grid-row-end: 21;
+        grid-column-start: 2;
+        grid-column-end: 7;
+        background-color: $lavanda;
+        @include estiloCajas;
+        box-shadow: 3px 2px 10px $brightPurpleOpacity;
+    }
+
+    .cajaDePropiedad2{
+        z-index: 4;
+        grid-row-start: 6;
+        grid-row-end: 20;
+        grid-column-start: 3;
+        grid-column-end: 8;
+        background-color: #a3a6d9;
+        @include estiloCajas;
+    }
+
+    .cajaDePropiedad3{
+        z-index: 3;
+        grid-row-start: 5;
+        grid-row-end: 19;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        background-color: #aeb1ea;
+        @include estiloCajas;
+    }
+
+    .cajaDePropiedad4{
+        z-index: 2;
+        grid-row-start: 4;
+        grid-row-end: 18;
+        grid-column-start: 5;
+        grid-column-end: 10;
+        background-color: $lightLavanda;
+        @include estiloCajas;
+    }
+
+    .cajaDePropiedad5{
+        z-index: 1;
+        grid-row-start: 3;
+        grid-row-end: 17;
+        grid-column-start: 6;
+        grid-column-end: 11;
+        background-color: #bdbfea;
+        @include estiloCajas;
+    }
+
+    .imgPropiedad{
+        width: 160px;
+        height: auto;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+
+    .nombrePropiedad{
+        text-decoration: underline;
+        font-size: map-get($typeSizes, sm); 
+        margin-top: 0.25rem;  
+        margin-left: 0.5rem;
+        line-height: 1rem;
+    }
+
+    .precioPropiedad{
+        font-weight: 300;  
+        font-size: map-get($typeSizes, sm);  
+        margin-left: 0.5rem;
+        line-height: 1rem;
+    }
+
+    .detallesPropiedad{ 
+        font-weight: 200;
+        font-size: map-get($typeSizes, sm); 
+        margin-left: 0.5rem;
+        line-height: 1.5rem;
+    }
+
+    .ratingPropiedad{
+        font-size: map-get($typeSizes, sm); 
+        margin-left: 0.5rem; 
+        display: inline;
+        line-height: 1rem;
+    }
+
+    .ratingStars{
+        width: 1rem;
+        height: auto;
+        display: inline;
+        line-height: 1rem;
+
+    }
+
+    .ctaPropiedades1{ 
+        font-weight: 300;
+        font-size: map-get($typeSizes, sm); ; 
+        grid-column-start: 7;
+        grid-column-end: 12;
+        grid-row-start: 21;
+        color: $brightPurple;
+        text-decoration: underline;
+    }
+
+
+
+    /*            banner HOME             */
+    .module-border-wrap {
+        padding: 1rem;
+        background: $gradientRegular;
+        padding: 2px;
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 26;
+        grid-row-end: 31; 
+        border-width: 1px;
+        border-radius: 0.5rem;
+        margin-left: 2rem;
+        margin-right: -8rem;
+        text-align: center;
+    }
+    
+    .module {
+        background: $white;
+        font-size: map-get($typeSizes, sm);
+        color: $brightPurple;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        text-align: center;
+    }
+    
+    /* Cajas abajo HOME */
+    .option4 {
+        display: none;
+    }
+
+    .option5 {
+        display: none;
+    }
+
+    .option6 {    
+        display: none;
+    }
+
+    .cajaDePropiedad6{
+        z-index: 5;
+        grid-row-start: 38;
+        grid-row-end: 52;
+        grid-column-start: 5;
+        grid-column-end: 10;
+        background-color: $lavanda;
+        @include estiloCajas;
+        box-shadow: 3px 2px 10px $brightPurpleOpacity;
+    }
+
+    .cajaDePropiedad7{
+        z-index: 4;
+        grid-row-start: 37;
+        grid-row-end: 51;
+        grid-column-start: 4;
+        grid-column-end: 7;
+        background-color: #a3a6d9;
+        @include estiloCajas;
+    }
+
+    .cajaDePropiedad8{
+        z-index: 3;
+        grid-row-start: 36;
+        grid-row-end: 50;
+        grid-column-start: 3;
+        grid-column-end: 7;
+        background-color: #aeb1ea;
+        @include estiloCajas;
+    }
+
+    .cajaDePropiedad9{
+        z-index: 2;
+        grid-row-start: 35;
+        grid-row-end: 49;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        background-color: $lightLavanda;
+        @include estiloCajas;
+    }
+
+    .cajaDePropiedad10{
+        z-index: 1;
+        grid-row-start: 34;
+        grid-row-end: 48;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        background-color: #bdbfea;
+        @include estiloCajas;
+    }
+
+    .ctaPropiedades2{ 
+        font-weight: 300;
+        font-size: map-get($typeSizes, sm); ; 
+        grid-column-start: 6;
+        grid-column-end: 12;
+        grid-row-start: 53;
+        color: $brightPurple;
+        text-decoration: underline;
+    }
+}
