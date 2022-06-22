@@ -13,6 +13,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicon_io/site.webmanifest">    
 
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/85ac08bde1.js" crossorigin="anonymous"></script>
+
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
@@ -44,32 +47,70 @@
 
 <!--topSection-->
     <main>
-        <h1 class="filtroGrande">I am looking for a _____ located in _____ </h1>
+        <form class="filtroMayor">
+            <h1 class="filtroGrande">I am looking for a <div class="form-row align-items-center">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                    <select class="custom-select mr-sm-2 spaceFilter" id="inlineFormCustomSelect">
+                    <option selected>House...</option>
+                    <option value="1">Apartment</option>
+                    <option value="2">Office</option>
+                    </select>
+                </div>
+                
+                located in
+
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                    <select class="custom-select mr-sm-2 locationFilter" id="inlineFormCustomSelect">
+                    <option selected>Polanco</option>
+                    <option value="1">Roma Norte</option>
+                    <option value="2">Guadalajara</option>
+                    <option value="3">Santa Fe</option>
+                    <option value="2">Reforma</option>
+                    </select>
+                </div>
+                
+            
+            </div>
+            </h1>
+            </form>
+        
 
         <div class="filtros">
-
             <form action="php" method="get" enctype="text/plain">
             
                 <!--cuartos-->
-                <img class="iconoDetalles" src="https://cdn-icons-png.flaticon.com/128/3159/3159436.png" alt="bed icon">
+                <div class="filterBy">
+                <i class="fas fa-bed"></i>
                 <label class="textoFiltros" for="">minimum rooms:</label>
                 <input class="inputFiltro" type="text" name="rooms" id="" required placeholder="0">    
+                </div>
 
                 <!--bano-->
-                <img class="iconoDetalles" src="https://cdn-icons.flaticon.com/png/128/726/premium/726768.png?token=exp=1651373307~hmac=bef980c1b75ebd5b079b639b9273c3dd" alt="bath icon">
+                <div class="filterBy">
+                <i class="fas fa-toilet"></i>
                 <label class="textoFiltros" for="">minimum bathrooms:</label>
                 <input class="inputFiltro" type="text" name="bathrooms" id="" required placeholder="0"> 
-                
+                </div>
+
                 <!--garage-->
-                <img class="iconoDetalles" src="https://cdn-icons-png.flaticon.com/128/7201/7201834.png" alt="car icon">
+                <div class="filterBy">
+                <i class="fas fa-car"></i>
                 <label class="textoFiltros" for="">has a garage</label>
                 <input class="inputFiltro" type="checkbox" name="garage" id="" required placeholder="1"> 
-                
+                </div>
+
                 <!--pets-->
-                <img class="iconoDetalles" src="https://cdn-icons-png.flaticon.com/128/1076/1076877.png" alt="paw icon">
+                <div class="filterBy">
+                <i class="fas fa-paw"></i> 
                 <label class="textoFiltros" for="">accepts pets</label>
                 <input class="inputFiltro" type="checkbox" name="pets" id="" required placeholder="1">             
+                </div>
 
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary botonBusca">Search</button>
+                </div>
 
         </div> 
 
@@ -160,16 +201,12 @@
 
 <!--footer-->
 <footer class="footer">
-
+    <a href="https://www.instagram.com/archdigest/?hl=es" target="_blank"><i class="fa-brands fa-facebook-square fa-2xl socialLogo1"></i></a>
+    <a href="https://www.facebook.com/architecturaldigest/" target="_blank"><i class="fa-brands fa-instagram-square fa-2xl socialLogo2"></i></a>    
     <p class="copyright">spacerate®. All rights reserved, 2022.</p> <br>
 
-    <img class="socialLogo1" src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="logo de instagram">
-    <img class="socialLogo2" src="https://cdn-icons-png.flaticon.com/512/747/747543.png" alt="logo de facebook">
-    <a class="socialLink1" href="https://www.instagram.com/archdigest/?hl=es">Instagram</a>
-    <a class="socialLink2" href="https://www.facebook.com/architecturaldigest/">Facebook</a>
-        
-
 </footer> 
+
 
 
 <!--Bootstrap-->

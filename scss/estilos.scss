@@ -104,6 +104,10 @@ a{
     margin-bottom: 0.5rem;
 }
 
+.filtroMayor{
+    display: inline-block !important;
+}
+
 .filtroGrande{
     font-weight: 300; 
     font-size: map-get($typeSizes, xl); 
@@ -112,27 +116,60 @@ a{
     margin-top: 1rem;  
 }
 
+.spaceFilter {
+    @extend .locationFilter;
+    display: inline-block;
+}
+
+.locationFilter{
+    font-weight: 300; 
+    font-size: map-get($typeSizes, xl); 
+    color:$brightPurple;
+    border-style: none;
+    border-color: $lila;
+    &:hover{
+        color: $brightPurple;
+    } 
+}
+
 /* filtros secundarios */
 .filtros{
     font-weight:800;
     color: $black;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
     margin-top: 1rem;
     margin-left: 2rem;
 }
 
+.filterBy{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
 
-.iconoDetalles{
-    width: 1.5rem;
+.botonBusca{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    color: $white;
+    border-radius: 3px;
+    align-self: flex-end;
+    background-color: $brightPurple;
+    border-style: none;
+    &:hover{
+        background-color: $brightPurpleOpacity;
+    } 
 }
 
 .textoFiltros{
     font-weight: 400;
     color: $black;
     margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 .inputFiltro{
@@ -168,51 +205,53 @@ a{
 
 /* ---------PAGINA PROPIEDADES MOBILE------------ */
 @media only screen and (max-width: 375px){
-.filtros{
-    font-weight:800;
-    color: $black;
-    display: block;
-    margin-top: 1rem;
-    margin-right: 2rem;
-}
+    .filtros{
+        font-weight:800;
+        color: $black;
+        display: flex;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+    
+    .filterBy{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
 
-.iconoDetalles{
-    width: 1.5rem;
-}
+    .textoFiltros{
+        font-weight: 400;
+        color: $black;
+        margin-right: 0.25rem;
+        margin-left: 0.5rem;
+    }
 
-.textoFiltros{
-    font-weight: 400;
-    color: $black;
-    margin-right: 0.5rem;
-    margin-bottom: 1rem;
-}
+    .inputFiltro{
+        font-weight: 300;
+        text-align: center;
+        margin-left: 0rem;
+        margin-right: 100px;
+        width: 2rem;
+    } 
 
-.inputFiltro{
-    font-weight: 300;
-    text-align: center;
-    margin-left: 0rem;
-    margin-right: 100px;
-    width: 2rem;
-} 
-
-.botonCargarMas{
-    grid-row-start: 29;
-    grid-row-end: 30;
-    grid-column-start: 5;
-    grid-column-end: 8;
-    font-weight: 400;
-    font-size: map-get($typeSizes, md); 
-    padding: 0.5rem 3rem;
-    background: $gradientRegular;
-    color: $white;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem auto;
-    border-radius: 5rem;
-}
+    .botonCargarMas{
+        grid-row-start: 29;
+        grid-row-end: 30;
+        grid-column-start: 5;
+        grid-column-end: 8;
+        font-weight: 400;
+        font-size: map-get($typeSizes, md); 
+        padding: 0.5rem 3rem;
+        background: $gradientRegular;
+        color: $white;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+        border-radius: 5rem;
+    }
 
 }
 
