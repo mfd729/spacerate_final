@@ -132,7 +132,6 @@ a:hover {
   transform: translateZ(0px);
   transition: transform 0.5s;
   transform-origin: 0 0;
-  margin: 0 -10px;
 }
 
 .cajaDePropiedad1 {
@@ -280,7 +279,7 @@ a:hover {
   padding: 2px;
   display: grid;
   grid-column-start: 1;
-  grid-column-end: 13;
+  grid-column-end: 12;
   grid-row-start: 20;
   grid-row-end: 22;
   border-width: 1px;
@@ -749,6 +748,9 @@ a:hover {
   color: #473BF0;
   margin-left: 2rem;
   margin-top: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .spaceFilter {
@@ -785,14 +787,16 @@ a:hover {
 
 .botonBusca {
   display: flex;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
   color: white;
   border-radius: 3px;
   align-self: flex-end;
   background-color: #473BF0;
   border-style: none;
+  margin-left: 60rem;
+  margin-top: -3rem;
 }
 .botonBusca:hover {
   background-color: rgba(71, 59, 240, 0.3215686275);
@@ -847,6 +851,18 @@ a:hover {
     margin-left: 2rem;
   }
 
+  .filtroGrande {
+    display: block;
+  }
+
+  .spaceFilter {
+    margin-left: -1rem;
+  }
+
+  .locationFilter, .spaceFilter {
+    margin-left: -1rem;
+  }
+
   .filterBy {
     flex-direction: row;
     align-items: center;
@@ -866,6 +882,20 @@ a:hover {
     margin-left: 0rem;
     margin-right: 100px;
     width: 2rem;
+  }
+
+  .botonBusca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    border-radius: 3px;
+    align-self: flex-end;
+    background-color: #473BF0;
+    border-style: none;
+    margin-top: -1rem;
+    margin-left: 14rem;
   }
 
   .botonCargarMas {
@@ -948,9 +978,9 @@ a:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+    margin: 1rem 2rem 2rem;
+    width: auto;
+    flex-flow: inherit;
   }
 
   .form-control2 {
@@ -960,6 +990,7 @@ a:hover {
     height: 36px;
     border-radius: 0.25rem 0rem 0rem 0.25rem;
     border-width: 1px;
+    width: 14.5rem;
   }
 }
 .btn-outline-secondary {

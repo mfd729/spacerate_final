@@ -114,6 +114,9 @@ a{
     color:$brightPurple;
     margin-left: 2rem;
     margin-top: 1rem;  
+    display:flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .spaceFilter {
@@ -151,14 +154,16 @@ a{
 
 .botonBusca{
     display: flex;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: flex-end !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
     color: $white;
     border-radius: 3px;
     align-self: flex-end;
     background-color: $brightPurple;
     border-style: none;
+    margin-left:60rem;
+    margin-top: -3rem;
     &:hover{
         background-color: $brightPurpleOpacity;
     } 
@@ -212,7 +217,19 @@ a{
         margin-top: 1rem;
         margin-left: 2rem;
     }
+
+    .filtroGrande{
+        display: block;
+    }
     
+    .spaceFilter{
+        margin-left: -1rem;
+    }
+
+    .locationFilter{
+        margin-left: -1rem;
+    }
+
     .filterBy{
         flex-direction: row;
         align-items: center;
@@ -233,6 +250,20 @@ a{
         margin-right: 100px;
         width: 2rem;
     } 
+
+    .botonBusca{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        color: $white;
+        border-radius: 3px;
+        align-self: flex-end;
+        background-color: $brightPurple;
+        border-style: none;
+        margin-top: -1rem;
+        margin-left: 14rem;
+    }
 
     .botonCargarMas{
         grid-row-start: 29;
@@ -321,9 +352,9 @@ a{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-left: 2rem;
-        margin-bottom: 2rem;
-        margin-top: 1rem;
+        margin: 1rem 2rem 2rem;
+        width: auto;
+        flex-flow: inherit;
     }    
 
     .form-control2{
@@ -333,6 +364,7 @@ a{
         height: 36px;
         border-radius: 0.25rem 0rem 0rem 0.25rem;
         border-width: 1px;
+        width: 14.5rem;
     }
 }
 
