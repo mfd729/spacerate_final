@@ -364,7 +364,7 @@
     .cajas{
         margin-top: 1rem;
         display: grid;
-        grid-template-columns: repeat(10, 2rem);
+        grid-template-columns: repeat(11, 2rem);
         grid-template-rows: repeat(53, 1rem);
         margin-left: 1rem;
     }
@@ -550,6 +550,242 @@
         grid-row-start: 34;
         grid-row-end: 48;
         grid-column-start: 1;
+        grid-column-end: 6;
+        background-color: #bdbfea;
+        @include estiloCajas;
+    }
+
+    .ctaPropiedades2{ 
+        font-weight: 300;
+        font-size: map-get($typeSizes, sm); ; 
+        grid-column-start: 6;
+        grid-column-end: 12;
+        grid-row-start: 53;
+        color: $brightPurple;
+        text-decoration: underline;
+    }
+}
+
+
+/* --------------       TABLET     HOME          -------------- */
+@media only screen and (min-width: 376px) and (max-width: 570px){
+
+    /* SCROLL IZQUIERDO HOME */
+    .option1, .option2, .option3, .option4, .option5, .option6{
+        display: none;
+    }
+
+    .optionsMobile{
+        
+        .mobOptions1 {
+            font-size: map-get($typeSizes,sm); 
+            margin-left: 1rem;
+            margin-right: -30px;        
+            a{
+                    color: $black
+                }
+            }
+        
+        .mobOptions2, .mobOptions3 {
+            font-size: map-get($typeSizes, sm);  
+            margin-right: -20px; 
+            margin-top: 0.5px;
+                a{
+                    color: $lavanda
+                } 
+            }
+    }
+
+
+    .cajas{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(11, 2.5rem);
+        grid-template-rows: repeat(53, 1rem);
+        margin-left: 1rem;
+    }
+
+
+    .cajaDePropiedad1{
+        z-index: 5;
+        grid-row-start: 7;
+        grid-row-end: 21;
+        grid-column-start: 3;
+        grid-column-end: 7;
+        background-color: $lavanda;
+        @include estiloCajas;
+        box-shadow: 3px 2px 10px $brightPurpleOpacity;
+    }
+
+    .cajaDePropiedad2{
+        z-index: 4;
+        grid-row-start: 6;
+        grid-row-end: 20;
+        grid-column-start: 4;
+        grid-column-end: 8;
+        background-color: #a3a6d9;
+        @include estiloCajas;
+    }
+
+    .cajaDePropiedad3{
+        z-index: 3;
+        grid-row-start: 5;
+        grid-row-end: 19;
+        grid-column-start: 5;
+        grid-column-end: 9;
+        background-color: #aeb1ea;
+        @include estiloCajas;
+    }
+
+    .cajaDePropiedad4{
+        z-index: 2;
+        grid-row-start: 4;
+        grid-row-end: 18;
+        grid-column-start: 6;
+        grid-column-end: 10;
+        background-color: $lightLavanda;
+        @include estiloCajas;
+    }
+
+    .cajaDePropiedad5{
+        z-index: 1;
+        grid-row-start: 3;
+        grid-row-end: 17;
+        grid-column-start: 7;
+        grid-column-end: 11;
+        background-color: #bdbfea;
+        @include estiloCajas;
+    }
+
+    .imgPropiedad{
+        width: 160px;
+        height: auto;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+
+    .nombrePropiedad{
+        text-decoration: underline;
+        font-size: map-get($typeSizes, sm); 
+        margin-top: 0.25rem;  
+        margin-left: 0.5rem;
+        line-height: 1rem;
+    }
+
+    .precioPropiedad{
+        font-weight: 300;  
+        font-size: map-get($typeSizes, sm);  
+        margin-left: 0.5rem;
+        line-height: 1rem;
+    }
+
+    .detallesPropiedad{ 
+        font-weight: 200;
+        font-size: map-get($typeSizes, sm); 
+        margin-left: 0.5rem;
+        line-height: 1.5rem;
+    }
+
+    .ratingPropiedad{
+        font-size: map-get($typeSizes, sm); 
+        margin-left: 0.5rem; 
+        display: inline;
+        line-height: 1rem;
+    }
+
+    .ratingStars{
+        width: 1rem;
+        height: auto;
+        display: inline;
+        line-height: 1rem;
+
+    }
+
+    .ctaPropiedades1{ 
+        font-weight: 300;
+        font-size: map-get($typeSizes, sm); ; 
+        grid-column-start: 7;
+        grid-column-end: 12;
+        grid-row-start: 21;
+        color: $brightPurple;
+        text-decoration: underline;
+    }
+
+
+
+    /*            banner HOME             */
+    .module-border-wrap {
+        padding: 1rem;
+        background: $gradientRegular;
+        padding: 2px;
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 8;
+        grid-row-start: 26;
+        grid-row-end: 30; 
+        border-width: 1px;
+        border-radius: 0.5rem;
+        margin-left: 2rem;
+        margin-right: -8rem;
+        text-align: center;
+    }
+    
+    .module {
+        background: $white;
+        font-size: map-get($typeSizes, sm);
+        color: $brightPurple;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        text-align: center;
+    }
+    
+
+    .cajaDePropiedad6{
+        z-index: 5;
+        grid-row-start: 38;
+        grid-row-end: 52;
+        grid-column-start: 6;
+        grid-column-end: 10;
+        background-color: $lavanda;
+        @include estiloCajas;
+        box-shadow: 3px 2px 10px $brightPurpleOpacity;
+    }
+
+    .cajaDePropiedad7{
+        z-index: 4;
+        grid-row-start: 37;
+        grid-row-end: 51;
+        grid-column-start: 5;
+        grid-column-end: 9;
+        background-color: #a3a6d9;
+        @include estiloCajas;
+    }
+
+    .cajaDePropiedad8{
+        z-index: 3;
+        grid-row-start: 36;
+        grid-row-end: 50;
+        grid-column-start: 4;
+        grid-column-end: 8;
+        background-color: #aeb1ea;
+        @include estiloCajas;
+    }
+
+    .cajaDePropiedad9{
+        z-index: 2;
+        grid-row-start: 35;
+        grid-row-end: 49;
+        grid-column-start: 3;
+        grid-column-end: 7;
+        background-color: $lightLavanda;
+        @include estiloCajas;
+    }
+
+    .cajaDePropiedad10{
+        z-index: 1;
+        grid-row-start: 34;
+        grid-row-end: 48;
+        grid-column-start: 2;
         grid-column-end: 6;
         background-color: #bdbfea;
         @include estiloCajas;

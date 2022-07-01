@@ -450,7 +450,7 @@ a:hover {
   .cajas {
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(10, 2rem);
+    grid-template-columns: repeat(11, 2rem);
     grid-template-rows: repeat(53, 1rem);
     margin-left: 1rem;
   }
@@ -639,6 +639,238 @@ a:hover {
     grid-row-start: 34;
     grid-row-end: 48;
     grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: #bdbfea;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .ctaPropiedades2 {
+    font-weight: 300;
+    font-size: 9pt;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 53;
+    color: #473BF0;
+    text-decoration: underline;
+  }
+}
+/* --------------       TABLET     HOME          -------------- */
+@media only screen and (min-width: 376px) and (max-width: 570px) {
+  /* SCROLL IZQUIERDO HOME */
+  .option1, .option2, .option3, .option4, .option5, .option6 {
+    display: none;
+  }
+
+  .optionsMobile .mobOptions1 {
+    font-size: 9pt;
+    margin-left: 1rem;
+    margin-right: -30px;
+  }
+  .optionsMobile .mobOptions1 a {
+    color: #13262F;
+  }
+  .optionsMobile .mobOptions2, .optionsMobile .mobOptions3 {
+    font-size: 9pt;
+    margin-right: -20px;
+    margin-top: 0.5px;
+  }
+  .optionsMobile .mobOptions2 a, .optionsMobile .mobOptions3 a {
+    color: #9B9ECE;
+  }
+
+  .cajas {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(11, 2.5rem);
+    grid-template-rows: repeat(53, 1rem);
+    margin-left: 1rem;
+  }
+
+  .cajaDePropiedad1 {
+    z-index: 5;
+    grid-row-start: 7;
+    grid-row-end: 21;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    background-color: #9B9ECE;
+    border-radius: 0.5rem;
+    color: white;
+    box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  }
+
+  .cajaDePropiedad2 {
+    z-index: 4;
+    grid-row-start: 6;
+    grid-row-end: 20;
+    grid-column-start: 4;
+    grid-column-end: 8;
+    background-color: #a3a6d9;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .cajaDePropiedad3 {
+    z-index: 3;
+    grid-row-start: 5;
+    grid-row-end: 19;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    background-color: #aeb1ea;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .cajaDePropiedad4 {
+    z-index: 2;
+    grid-row-start: 4;
+    grid-row-end: 18;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .cajaDePropiedad5 {
+    z-index: 1;
+    grid-row-start: 3;
+    grid-row-end: 17;
+    grid-column-start: 7;
+    grid-column-end: 11;
+    background-color: #bdbfea;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .imgPropiedad {
+    width: 160px;
+    height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .nombrePropiedad {
+    text-decoration: underline;
+    font-size: 9pt;
+    margin-top: 0.25rem;
+    margin-left: 0.5rem;
+    line-height: 1rem;
+  }
+
+  .precioPropiedad {
+    font-weight: 300;
+    font-size: 9pt;
+    margin-left: 0.5rem;
+    line-height: 1rem;
+  }
+
+  .detallesPropiedad {
+    font-weight: 200;
+    font-size: 9pt;
+    margin-left: 0.5rem;
+    line-height: 1.5rem;
+  }
+
+  .ratingPropiedad {
+    font-size: 9pt;
+    margin-left: 0.5rem;
+    display: inline;
+    line-height: 1rem;
+  }
+
+  .ratingStars {
+    width: 1rem;
+    height: auto;
+    display: inline;
+    line-height: 1rem;
+  }
+
+  .ctaPropiedades1 {
+    font-weight: 300;
+    font-size: 9pt;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 21;
+    color: #473BF0;
+    text-decoration: underline;
+  }
+
+  /*            banner HOME             */
+  .module-border-wrap {
+    padding: 1rem;
+    background: linear-gradient(331deg, rgb(102, 101, 221) 0%, rgb(71, 59, 240) 100%);
+    padding: 2px;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 26;
+    grid-row-end: 30;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    margin-right: -8rem;
+    text-align: center;
+  }
+
+  .module {
+    background: white;
+    font-size: 9pt;
+    color: #473BF0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  .cajaDePropiedad6 {
+    z-index: 5;
+    grid-row-start: 38;
+    grid-row-end: 52;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    background-color: #9B9ECE;
+    border-radius: 0.5rem;
+    color: white;
+    box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  }
+
+  .cajaDePropiedad7 {
+    z-index: 4;
+    grid-row-start: 37;
+    grid-row-end: 51;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    background-color: #a3a6d9;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .cajaDePropiedad8 {
+    z-index: 3;
+    grid-row-start: 36;
+    grid-row-end: 50;
+    grid-column-start: 4;
+    grid-column-end: 8;
+    background-color: #aeb1ea;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .cajaDePropiedad9 {
+    z-index: 2;
+    grid-row-start: 35;
+    grid-row-end: 49;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .cajaDePropiedad10 {
+    z-index: 1;
+    grid-row-start: 34;
+    grid-row-end: 48;
+    grid-column-start: 2;
     grid-column-end: 6;
     background-color: #bdbfea;
     border-radius: 0.5rem;
@@ -867,6 +1099,84 @@ a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    display: inline-flex;
+  }
+
+  .textoFiltros {
+    font-weight: 400;
+    color: #13262F;
+    margin-right: 0.25rem;
+    margin-left: 0.5rem;
+  }
+
+  .inputFiltro {
+    font-weight: 300;
+    text-align: center;
+    margin-left: 0rem;
+    margin-right: 100px;
+    width: 2rem;
+  }
+
+  .botonBusca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    border-radius: 3px;
+    align-self: flex-end;
+    background-color: #473BF0;
+    border-style: none;
+    margin-top: -1rem;
+    margin-left: 14rem;
+  }
+
+  .botonCargarMas {
+    grid-row-start: 29;
+    grid-row-end: 30;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    font-weight: 400;
+    font-size: 10pt;
+    padding: 0.5rem 3rem;
+    background: linear-gradient(331deg, rgb(102, 101, 221) 0%, rgb(71, 59, 240) 100%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    border-radius: 5rem;
+  }
+}
+/* --------------       PAGINA PROPIEDADES TABLET      -------------- */
+@media only screen and (min-width: 376px) and (max-width: 570px) {
+  .filtros {
+    font-weight: 800;
+    color: #13262F;
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+
+  .filtroGrande {
+    display: block;
+  }
+
+  .spaceFilter {
+    margin-left: -1rem;
+  }
+
+  .locationFilter, .spaceFilter {
+    margin-left: -0.25rem;
+  }
+
+  .filterBy {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    display: inline-flex;
   }
 
   .textoFiltros {
@@ -973,7 +1283,29 @@ a:hover {
   border-width: 1px;
 }
 
+/* -------------------------------PAGINA FAQ MOBILE------------------------------------ */
 @media only screen and (max-width: 375px) {
+  .searchbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 2rem 2rem;
+    width: auto;
+    flex-flow: inherit;
+  }
+
+  .form-control2 {
+    border-color: #9B9ECE;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    height: 36px;
+    border-radius: 0.25rem 0rem 0rem 0.25rem;
+    border-width: 1px;
+    width: 14.5rem;
+  }
+}
+/* -------------------------------PAGINA FAQ TABLET------------------------------------ */
+@media only screen and (min-width: 376px) and (max-width: 570px) {
   .searchbar {
     display: flex;
     justify-content: flex-start;

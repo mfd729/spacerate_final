@@ -234,6 +234,7 @@ a{
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
+        display: inline-flex;
     }
 
     .textoFiltros{
@@ -284,6 +285,85 @@ a{
         border-radius: 5rem;
     }
 
+}
+
+
+/* --------------       PAGINA PROPIEDADES TABLET      -------------- */
+@media only screen and (min-width: 376px) and (max-width: 570px){
+    .filtros{
+        font-weight:800;
+        color: $black;
+        display: flex;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .filtroGrande{
+        display: block;
+    }
+    
+    .spaceFilter{
+        margin-left: -1rem;
+    }
+
+    .locationFilter{
+        margin-left: -0.25rem;
+    }
+
+    .filterBy{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        display: inline-flex;
+    }
+
+    .textoFiltros{
+        font-weight: 400;
+        color: $black;
+        margin-right: 0.25rem;
+        margin-left: 0.5rem;
+    }
+
+    .inputFiltro{
+        font-weight: 300;
+        text-align: center;
+        margin-left: 0rem;
+        margin-right: 100px;
+        width: 2rem;
+    } 
+
+    .botonBusca{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        color: $white;
+        border-radius: 3px;
+        align-self: flex-end;
+        background-color: $brightPurple;
+        border-style: none;
+        margin-top: -1rem;
+        margin-left: 14rem;
+    }
+
+    .botonCargarMas{
+        grid-row-start: 29;
+        grid-row-end: 30;
+        grid-column-start: 5;
+        grid-column-end: 8;
+        font-weight: 400;
+        font-size: map-get($typeSizes, md); 
+        padding: 0.5rem 3rem;
+        background: $gradientRegular;
+        color: $white;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+        border-radius: 5rem;
+    }
 }
 
 
@@ -347,6 +427,8 @@ a{
     border-width: 1px;
 }
 
+/* -------------------------------PAGINA FAQ MOBILE------------------------------------ */
+
 @media only screen and (max-width: 375px){
     .searchbar{
         display: flex;
@@ -368,6 +450,28 @@ a{
     }
 }
 
+
+/* -------------------------------PAGINA FAQ TABLET------------------------------------ */
+@media only screen and (min-width: 376px) and (max-width: 570px){
+    .searchbar{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 1rem 2rem 2rem;
+        width: auto;
+        flex-flow: inherit;
+    }    
+
+    .form-control2{
+        border-color: $lavanda;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        height: 36px;
+        border-radius: 0.25rem 0rem 0rem 0.25rem;
+        border-width: 1px;
+        width: 14.5rem;
+    }  
+}
 
 .btn-outline-secondary{
     color: #ffffff;
